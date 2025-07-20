@@ -53,6 +53,7 @@
   background-blend-mode: multiply;
   cursor: pointer;
   transition: all 450ms ease-in-out;
+
 }
 
 .text {
@@ -87,7 +88,7 @@
   z-index: 1;
   background-size: cover;
   background-position: center;
-  /* background-repeat: no-repeat; */
+
   background-blend-mode: multiply;
 }
 
@@ -101,4 +102,38 @@
 
 .circle {
   border-bottom: hidden;
+}
+.cardbg {
+background: #EEAECA;
+background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgb(102, 167, 241) 100%);
+}
+.my-gradient-bg {
+  background: linear-gradient(to bottom, #2bb0ff, #9f7aea);
+}
+.main-card{
+   background: linear-gradient(135deg,rgb(84, 84, 192),rgb(129, 104, 166));
+   box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+}
+.shadow{
+  box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+  
+  
+}
+.blur-card{
+  border: 1px solid pink;
+  background:pink;
+    background-image: linear-gradient(180deg, #ac8efa, #4f2bac);
+     box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+}
+
+.car-card{
+    background: linear-gradient(0deg, #a47cf3, #683fea);
+  background-image: linear-gradient(0deg, #a47cf3, #683fea),
+    url("Screenshot 2025-07-18 192539.png");
+
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  cursor: pointer;
+  transition: all 450ms ease-in-out
 }

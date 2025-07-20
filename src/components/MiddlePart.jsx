@@ -1,10 +1,19 @@
 import { FaCodeBranch } from "react-icons/fa";
+import Modal from "./Modal";
+import { useState } from "react";
 
 export default function AiCardLayout() {
+  const [openModal, setOpenModal] = useState(false);
+  const handleOpenModal=()=>{
+    setOpenModal(true)
+  }
+  const handleClose=()=>{
+    setOpenModal(false)
+  }
   return (
-    <div className="border  flex flex-col items-center text-white gap-6 ">
+    <div className="  flex flex-col items-center text-white gap-6 ">
       {/* Top Gradient Card */}
-      <div className="w-full h-[340px]  bg-gradient-to-b from-[#2bb0ff] to-[#9f7aea] rounded-[28px] relative flex flex-col items-center justify-start pt-6 shadow-lg">
+      <div className="w-full h-[340px] my-gradient-bg  rounded-[28px] relative flex flex-col items-center justify-start pt-6 shadow-lg  ">
         <h2 className="text-white font-bold text-xl">Template Ai</h2>
 
         {/* Placeholder box in center */}
@@ -25,7 +34,7 @@ export default function AiCardLayout() {
       {/* last card */}
 
       <div className="flex gap-20 -mt-30">
-        <div className="noice-card rounded-2xl shadow-md h-[320px] flex flex-col justify-end">
+        <div className="noice-card rounded-2xl shadow-md h-[320px] flex flex-col justify-end" onClick={handleOpenModal}>
 
       <div className="relative">
         {/* Cutout Left Line */}
@@ -37,7 +46,7 @@ export default function AiCardLayout() {
         </div>
     
     </div>
-          <div className="flex items-center gap-2 mb-2 ">
+          <div className="flex items-center gap-2 mb-2  " >
             <h3 className="text-2xl font-semibold">Branching paths</h3>
           </div>
           <p className="text-sm text-gray-300">
@@ -67,6 +76,7 @@ export default function AiCardLayout() {
           </p>
         </div>
       </div>
+      <Modal show={openModal} onClose={handleClose} comp={"queue"}/>
     </div>
   );
 }

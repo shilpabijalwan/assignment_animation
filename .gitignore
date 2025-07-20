@@ -1,4 +1,6 @@
 # Logs
+class-list.json
+pid
 logs
 *.log
 npm-debug.log*

@@ -5,12 +5,13 @@ import { FaCodeBranch } from "react-icons/fa";
 import LeftSection from "./components/LeftSection";
 import RightSection from "./components/RightSection";
 import AiCardLayout from "./components/MiddlePart";
+import { CarouselComponent } from "./components/Carousel";
 
 function App() {
-  const [count, setCount] = useState(0);
+
 
   return (
-    <div className="app w-5/6 m-auto border px-10 flex justify-between ">
+    <div className="app w-5/6 m-auto  px-10 flex justify-between ">
       <LeftSection />
       <AiCardLayout />
       <RightSection />
